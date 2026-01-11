@@ -2,102 +2,213 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mechanical Engineering Portfolio – Nkechukwu Ogbonna</title>
+  <title>Mechanical Engineering Portfolio | Nkechukwu Ogbonna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
+    :root {
+      --primary: #0b1f3a;
+      --accent: #1f6feb;
+      --background: #f4f6f8;
+      --card: #ffffff;
+      --text: #333;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
     }
-    h1, h2 {
-      color: #004080;
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #122f57);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
     }
-    .section {
-      margin-bottom: 40px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 0.5px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
-      margin-top: 10px;
+
+    header p {
+      max-width: 700px;
+      margin: 15px auto 25px;
+      font-size: 1.05rem;
+      opacity: 0.95;
     }
-    a {
-      color: #0066cc;
+
+    .linkedin-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 25px;
       text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
+
+    .linkedin-btn:hover {
+      background: #1557c0;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
     a:hover {
       text-decoration: underline;
     }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #e9ecef;
+      color: #555;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
+
 <body>
 
-  <h1>Mechanical Engineering Portfolio</h1>
-  <p>Welcome to my engineering portfolio. This site documents the design, fabrication, and analysis of our final-year project: an apparatus for demonstrating the natural frequency of a vibrating body.</p>
+<header>
+  <h1>Nkechukwu Ogbonna</h1>
+  <p>
+    Mechanical Engineering Project Portfolio — Design, Fabrication, and Analysis
+    of an apparatus for demonstrating the natural frequency of a vibrating body.
+  </p>
+  <a class="linkedin-btn" href="https://www.linkedin.com/in/nkechukwu-ogbonna-b3511b210/" target="_blank">
+    Connect on LinkedIn
+  </a>
+</header>
 
-  <div class="section">
+<main>
+
+  <!-- PHASE 1 -->
+  <section class="section">
     <h2>Phase 1: Concept & Initiation</h2>
-    <p>This phase covers the seminar proposal, project motivation, and early conceptual work.</p>
-    <ul>
-      <li><a href="concept-initiation/seminarproposal.pdf" target="_blank">📄 Seminar Proposal PDF</a></li>
-      <li><a href="concept-initiation/afterseminar.jpg" target="_blank">📷 Seminar Kickoff Photo</a></li>
-      <li><a href="concept-initiation/cadofframe.png" target="_blank">🛠️ CAD Model of Frame</a></li>
-    </ul>
-  
-  </div>
+    <div class="card">
+      <ul>
+        <li><a href="concept-initiation/seminarproposal.pdf" target="_blank">📄 Seminar Proposal</a></li>
+        <li><a href="concept-initiation/afterseminar.jpg" target="_blank">📷 Seminar Kickoff Photo</a></li>
+        <li><a href="concept-initiation/cadofframe.png" target="_blank">🛠️ CAD Frame Design</a></li>
+      </ul>
 
-  <div class="section">
-    <h2>Upcoming Phases</h2>
-    <div class="section">
-  <h2>Phase 2: Materials & Procurement</h2>
-  <p>Documentation of budgeting, sourcing, and component selection for the vibration apparatus.</p>
-  <ul>
-    <li><a href="materials-procurement/motor-and-unbalanced-force.jpg" target="_blank">🔧 Motor Image</a></li>
-    <li><a href="materials-procurement/circuit_board.jpeg" target="_blank">🔌 PCB Image</a></li>
-    <li><a href="materials-procurement/stachion_in_process.mp4" target="_blank">🔌 Stanchion</a></li>
-    <li><a href="materials-procurement/README.md" target="_blank">📄 Phase Summary</a></li>
-  </ul>
-  <img src="materials-procurement/motor.jpeg" alt="Motor">
-  <img src="materials-procurement/pcb.jpeg" alt="PCB">
-</div>
+      <div class="images">
+        <img src="concept-initiation/afterseminar.jpg" alt="Seminar Kickoff">
+        <img src="concept-initiation/cadofframe.png" alt="CAD Frame">
+      </div>
+    </div>
+  </section>
 
-    <ul>
-      <li><strong>Materials & Procurement</strong> – Budgeting and component selection</li>
-      <li><strong>Build & Integration</strong> – Assembly and fabrication process</li>
-      <li><strong>Testing & Final Output</strong> – Performance validation and project results</li>
-    </ul>
-  </div>
+  <!-- PHASE 2 -->
+  <section class="section">
+    <h2>Phase 2: Materials & Procurement</h2>
+    <div class="card">
+      <ul>
+        <li><a href="materials-procurement/motor-and-unbalanced-force.jpg" target="_blank">🔧 Motor & Unbalanced Force</a></li>
+        <li><a href="materials-procurement/circuit_board.jpg" target="_blank">🔌 Circuit Board</a></li>
+        <li><a href="materials-procurement/stachion_in_process.mp4" target="_blank">🏗️ Stanchion in Process (Video)</a></li>
+      </ul>
 
-  <div class="section">
-  <h2>Phase 3: Build & Integration</h2>
-  <p>Assembly and integration of all components into a functional vibration measurement system.</p>
-  <ul>
-    <li><a href="build-integration/frame-painting.jpeg" target="_blank">🎨 Frame Painting</a></li>
-    <li><a href="build-integration/control-unit.jpeg" target="_blank">📟 Control Unit</a></li>
-    <li><a href="build-integration/pcb-design.jpeg" target="_blank">🧠 PCB Design</a></li>
-    <li><a href="build-integration/README.md" target="_blank">📄 Phase Summary</a></li>
-  </ul>
-  <img src="build-integration/frame-painting.jpeg" alt="Frame Painting">
-  <img src="build-integration/control-unit.jpeg" alt="Control Unit">
-  <img src="build-integration/pcb-design.jpeg" alt="PCB Design">
-</div>
+      <div class="images">
+        <img src="materials-procurement/motor-and-unbalanced-force.jpg" alt="Motor">
+        <img src="materials-procurement/circuit_board.jpg" alt="Circuit Board">
+      </div>
+    </div>
+  </section>
 
-  <div class="section">
-  <h2>Phase 4: Testing & Final Output</h2>
-  <p>Final validation of the vibration apparatus, including results, analysis, and project documentation.</p>
-  <ul>
-    <li><a href="testing-output/project-report.pdf" target="_blank">📄 Final Project Report</a></li>
-    <li><a href="testing-output/project_presentation.pptx" target="_blank">📊 Presentation Slides</a></li>
-    <li><a href="testing-output/assembled-machine.jpeg" target="_blank">🧪 Final Apparatus Photo</a></li>
-    <li><a href="testing-output/README.md" target="_blank">📘 Phase Summary</a></li>
-  </ul>
-  <img src="testing-output/assembled-machine.jpeg" alt="Final Apparatus">
-</div>
+  <!-- PHASE 3 -->
+  <section class="section">
+    <h2>Phase 3: Build & Integration</h2>
+    <div class="card">
+      <ul>
+        <li><a href="build-integration/stanchion.jpg" target="_blank">🧱 Stanchion Assembly</a></li>
+        <li><a href="build-integration/circuit-processing.jpg" target="_blank">⚙️ Circuit Processing</a></li>
+        <li><a href="build-integration/sensor.jpg" target="_blank">📡 Sensor Installation</a></li>
+      </ul>
 
+      <div class="images">
+        <img src="build-integration/stanchion.jpg" alt="Stanchion">
+        <img src="build-integration/sensor.jpg" alt="Sensor">
+      </div>
+    </div>
+  </section>
 
+  <!-- PHASE 4 -->
+  <section class="section">
+    <h2>Phase 4: Testing & Final Output</h2>
+    <div class="card">
+      <ul>
+        <li><a href="testing-output/project-report.pdf" target="_blank">📄 Final Project Report</a></li>
+        <li><a href="testing-output/project_ppresentation.pptx" target="_blank">📊 Project Presentation</a></li>
+        <li><a href="testing-output/apparatus.jpg" target="_blank">🧪 Final Apparatus</a></li>
+      </ul>
 
-  <p>Stay tuned as I continue uploading and documenting each phase of the project.</p>
+      <div class="images">
+        <img src="testing-output/apparatus.jpg" alt="Final Apparatus">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Nkechukwu Ogbonna • Mechanical Engineering Portfolio
+</footer>
 
 </body>
 </html>
